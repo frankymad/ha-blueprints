@@ -8,178 +8,179 @@ blueprint:
   domain: automation
   homeassistant:
     min_version: 2026.5.2
-  input:
-    top_left_sensor:
-      name: Top left sensor
-      selector:
-        entity:
-          domain: sensor
-    top_middle_sensor:
-      name: Top middle sensor
-      selector:
-        entity:
-          domain: sensor
-    top_right_sensor:
-      name: Top right sensor
-      selector:
-        entity:
-          domain: sensor
-    bottom_left_sensor:
-      name: Bottom left sensor
-      selector:
-        entity:
-          domain: sensor
-    bottom_middle_sensor:
-      name: Bottom middle sensor
-      selector:
-        entity:
-          domain: sensor
-    bottom_right_sensor:
-      name: Bottom right sensor
-      selector:
-        entity:
-          domain: sensor
 
-    top_left_reset_helper:
-      name: Top left reset helper
-      description: Optional input_text helper mirrored to the last press and then reset to no press
-      default: null
-      selector:
-        entity:
-          domain: input_text
-    top_middle_reset_helper:
-      name: Top middle reset helper
-      default: null
-      selector:
-        entity:
-          domain: input_text
-    top_right_reset_helper:
-      name: Top right reset helper
-      default: null
-      selector:
-        entity:
-          domain: input_text
-    bottom_left_reset_helper:
-      name: Bottom left reset helper
-      default: null
-      selector:
-        entity:
-          domain: input_text
-    bottom_middle_reset_helper:
-      name: Bottom middle reset helper
-      default: null
-      selector:
-        entity:
-          domain: input_text
-    bottom_right_reset_helper:
-      name: Bottom right reset helper
-      default: null
-      selector:
-        entity:
-          domain: input_text
+input:
+  top_left_sensor:
+    name: Top left sensor
+    selector:
+      entity:
+        domain: sensor
+  top_middle_sensor:
+    name: Top middle sensor
+    selector:
+      entity:
+        domain: sensor
+  top_right_sensor:
+    name: Top right sensor
+    selector:
+      entity:
+        domain: sensor
+  bottom_left_sensor:
+    name: Bottom left sensor
+    selector:
+      entity:
+        domain: sensor
+  bottom_middle_sensor:
+    name: Bottom middle sensor
+    selector:
+      entity:
+        domain: sensor
+  bottom_right_sensor:
+    name: Bottom right sensor
+    selector:
+      entity:
+        domain: sensor
 
-    reset_delay_ms:
-      name: Reset delay
-      description: Delay before helper returns to no press
-      default: 0
-      selector:
-        number:
-          min: 0
-          max: 5000
-          step: 100
-          unit_of_measurement: ms
-          mode: box
+  top_left_reset_helper:
+    name: Top left reset helper
+    description: Optional input_text helper mirrored to the last press and then reset to no press
+    default: null
+    selector:
+      entity:
+        domain: input_text
+  top_middle_reset_helper:
+    name: Top middle reset helper
+    default: null
+    selector:
+      entity:
+        domain: input_text
+  top_right_reset_helper:
+    name: Top right reset helper
+    default: null
+    selector:
+      entity:
+        domain: input_text
+  bottom_left_reset_helper:
+    name: Bottom left reset helper
+    default: null
+    selector:
+      entity:
+        domain: input_text
+  bottom_middle_reset_helper:
+    name: Bottom middle reset helper
+    default: null
+    selector:
+      entity:
+        domain: input_text
+  bottom_right_reset_helper:
+    name: Bottom right reset helper
+    default: null
+    selector:
+      entity:
+        domain: input_text
 
-    top_left_single:
-      name: Top left - single press
-      default: []
-      selector:
-        action: {}
-    top_left_double:
-      name: Top left - double press
-      default: []
-      selector:
-        action: {}
-    top_left_long:
-      name: Top left - long press
-      default: []
-      selector:
-        action: {}
-    top_middle_single:
-      name: Top middle - single press
-      default: []
-      selector:
-        action: {}
-    top_middle_double:
-      name: Top middle - double press
-      default: []
-      selector:
-        action: {}
-    top_middle_long:
-      name: Top middle - long press
-      default: []
-      selector:
-        action: {}
-    top_right_single:
-      name: Top right - single press
-      default: []
-      selector:
-        action: {}
-    top_right_double:
-      name: Top right - double press
-      default: []
-      selector:
-        action: {}
-    top_right_long:
-      name: Top right - long press
-      default: []
-      selector:
-        action: {}
-    bottom_left_single:
-      name: Bottom left - single press
-      default: []
-      selector:
-        action: {}
-    bottom_left_double:
-      name: Bottom left - double press
-      default: []
-      selector:
-        action: {}
-    bottom_left_long:
-      name: Bottom left - long press
-      default: []
-      selector:
-        action: {}
-    bottom_middle_single:
-      name: Bottom middle - single press
-      default: []
-      selector:
-        action: {}
-    bottom_middle_double:
-      name: Bottom middle - double press
-      default: []
-      selector:
-        action: {}
-    bottom_middle_long:
-      name: Bottom middle - long press
-      default: []
-      selector:
-        action: {}
-    bottom_right_single:
-      name: Bottom right - single press
-      default: []
-      selector:
-        action: {}
-    bottom_right_double:
-      name: Bottom right - double press
-      default: []
-      selector:
-        action: {}
-    bottom_right_long:
-      name: Bottom right - long press
-      default: []
-      selector:
-        action: {}
+  reset_delay_ms:
+    name: Reset delay
+    description: Delay before helper returns to no press
+    default: 0
+    selector:
+      number:
+        min: 0
+        max: 5000
+        step: 100
+        unit_of_measurement: ms
+        mode: box
+
+  top_left_single:
+    name: Top left - single press
+    default: []
+    selector:
+      action: {}
+  top_left_double:
+    name: Top left - double press
+    default: []
+    selector:
+      action: {}
+  top_left_long:
+    name: Top left - long press
+    default: []
+    selector:
+      action: {}
+  top_middle_single:
+    name: Top middle - single press
+    default: []
+    selector:
+      action: {}
+  top_middle_double:
+    name: Top middle - double press
+    default: []
+    selector:
+      action: {}
+  top_middle_long:
+    name: Top middle - long press
+    default: []
+    selector:
+      action: {}
+  top_right_single:
+    name: Top right - single press
+    default: []
+    selector:
+      action: {}
+  top_right_double:
+    name: Top right - double press
+    default: []
+    selector:
+      action: {}
+  top_right_long:
+    name: Top right - long press
+    default: []
+    selector:
+      action: {}
+  bottom_left_single:
+    name: Bottom left - single press
+    default: []
+    selector:
+      action: {}
+  bottom_left_double:
+    name: Bottom left - double press
+    default: []
+    selector:
+      action: {}
+  bottom_left_long:
+    name: Bottom left - long press
+    default: []
+    selector:
+      action: {}
+  bottom_middle_single:
+    name: Bottom middle - single press
+    default: []
+    selector:
+      action: {}
+  bottom_middle_double:
+    name: Bottom middle - double press
+    default: []
+    selector:
+      action: {}
+  bottom_middle_long:
+    name: Bottom middle - long press
+    default: []
+    selector:
+      action: {}
+  bottom_right_single:
+    name: Bottom right - single press
+    default: []
+    selector:
+      action: {}
+  bottom_right_double:
+    name: Bottom right - double press
+    default: []
+    selector:
+      action: {}
+  bottom_right_long:
+    name: Bottom right - long press
+    default: []
+    selector:
+      action: {}
 
 mode: parallel
 max: 30
